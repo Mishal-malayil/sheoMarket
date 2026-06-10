@@ -9,6 +9,7 @@ use App\Http\Controllers\SizeController;
 use App\Http\Controllers\ProductController;
 
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::apiResource('categories', CategoryController::class);
 Route::apiResource('shoes', ShoeController::class);
 

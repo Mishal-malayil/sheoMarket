@@ -12,4 +12,8 @@ class ProductController extends Controller
     {
         return Product::all();
     }
+    public function show($id)
+    {
+        return Product::findOrFail($id);
+    }
 }
